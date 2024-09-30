@@ -1,7 +1,7 @@
 /* Estilos Generales */
 body {
   font-family: Arial, sans-serif;
-  background-image: url('https://static.vecteezy.com/system/resources/previews/001/227/752/original/modern-blue-trendy-technology-background-vector.jpg');
+  background: white;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -14,6 +14,7 @@ body {
 
 header {
   background-color: #0d2f44;
+  margin-bottom: 1%;
   padding: 15px;
   text-align: center;
   color: white;
@@ -44,12 +45,12 @@ nav ul li a {
 }
 
 main {
-  margin: 20px;
+  margin: 0px;
 }
 
 section {
   margin-bottom: 40px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #0d2f44;
   padding: 20px;
   border-radius: 10px;
 }
@@ -59,7 +60,7 @@ h2 {
   color: white;
   padding: 10px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .social-links {
