@@ -80,6 +80,8 @@ section {
   border-radius: 10px;
 }
 
+/* IMÁGENES DE EXPERIENCIA LABORAL
+
 /* Centrar imagen y descripción */
 .image-container {
   text-align: center; /* Centra la imagen y el texto debajo */
@@ -112,7 +114,6 @@ section {
 
 .image-certificado img {
   max-width: 60%; /* Asegura que la imagen no exceda el ancho del contenedor */
-  max-width: 300px
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
@@ -125,8 +126,9 @@ section {
   .image-certificado img {
       width: 100%; /* Asegura que la imagen ocupe el 100% del ancho en dispositivos pequeños */
       max-width: 100%;
-      diplay: block;
-      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 }
 
