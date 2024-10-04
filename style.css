@@ -124,7 +124,8 @@ section {
 @media (max-width: 768px) {
   .image-certificado img {
       width: 100%; /* Asegura que la imagen ocupe el 100% del ancho en dispositivos pequeños */
-      max-width: 100%
+      max-width: 100%;
+      text-aligne: center;
   }
 }
 
