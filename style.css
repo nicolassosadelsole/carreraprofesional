@@ -102,6 +102,28 @@ section {
   }
 }
 
+/*CERTIFICADOS:
+
+/* Centrar imagen y descripción */
+.image-certificado {
+  text-align: center; /* Centra la imagen y el texto debajo */
+  margin: 20px 0; /* Añade espacio alrededor del contenedor */
+}
+
+.image-certificado img {
+  max-width: 60%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.image-certificado p {
+  margin-top: 10px; /* Añade espacio entre la imagen y el texto */
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 768px) {
+  .image-certificado img 
+      width: 100%; /* Asegura que la imagen ocupe el 100% del ancho en dispositivos pequeños */
+}
 
 .social-links {
   display: flex;
