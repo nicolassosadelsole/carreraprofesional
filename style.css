@@ -132,6 +132,35 @@ section {
   }
 }
 
+/*ÍTEM PROGRAMACIÓN - IMÁGENES
+
+/* Contenedor de imágenes */
+.image-programacion {
+  display: flex;
+  justify-content: space-around; /* Distribuye las imágenes con espacio entre ellas */
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten en pantallas más pequeñas */
+  gap: 20px; /* Añade espacio entre las imágenes */
+}
+
+.image-item {
+  text-align: center; /* Centra la descripción con respecto a la imagen */
+  max-width: 45%; /* Ajusta el ancho máximo de cada imagen y descripción */
+}
+
+.image-item img {
+  max-width: 100%; /* La imagen no supera el contenedor */
+  height: 500px; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Recorta la imagen si es necesario para que encaje en la altura */
+}
+
+/* Estilo responsivo para móviles */
+@media (max-width: 768px) {
+  .image-item {
+    max-width: 100%; /* Las imágenes ocupan el ancho completo en pantallas pequeñas */
+  }
+}
+
+
 .social-links {
   display: flex;
   justify-content: center;
