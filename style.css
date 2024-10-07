@@ -182,6 +182,9 @@ section {
       display: flex;
       justify-content: center;
       align-items: center;
+      object-fit:contain; /* Recorta la imagen si es necesario para que encaje en la altura */
+      margin-top: -45px; /* Añade espacio entre la imagen y el texto */
+      margin-bottom: -45px;
   }
 }
 
