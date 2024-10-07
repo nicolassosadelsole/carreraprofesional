@@ -160,33 +160,6 @@ section {
   }
 }
 
-/*ELECTRO-URBANO:
-
-/* Centrar imagen y descripción */
-.image-electrourbano {
-  text-align:center; /* Centra la imagen y el texto debajo */
-  margin: 20px 0; /* Añade espacio alrededor del contenedor */
-}
-
-.image-electrourbano img {
-  max-width: 50%; /* Asegura que la imagen no exceda el ancho del contenedor */
-  height: 200px; /* Mantiene la proporción de la imagen */
-  object-fit:fill; /* Recorta la imagen si es necesario para que encaje en la altura */
-}
-
-/* Estilos responsivos para móviles */
-@media (max-width: 768px) {
-  .image-electrourbano img {
-      width: 100%; /* Asegura que la imagen ocupe el 100% del ancho en dispositivos pequeños */
-      max-width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      object-fit:contain; /* Recorta la imagen si es necesario para que encaje en la altura */
-      margin-top: -45px; /* Añade espacio entre la imagen y el texto */
-      margin-bottom: -45px;
-  }
-}
 
 
 .social-links {
@@ -217,3 +190,4 @@ section {
 .whatsapp-float img {
   width: 60px;
 }
+
