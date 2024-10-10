@@ -50,6 +50,26 @@
   gtag('config', 'G-XWCSH4PS4V');
 </script>
 
+<script>
+        // Redirigir a la sección correspondiente según el hash en la URL
+        window.onload = function() {
+            if (window.location.hash) {
+                const hash = window.location.hash;
+                const section = document.querySelector(hash);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        };
+
+        // También puedes agregar un listener para cuando se cambie el hash
+        window.addEventListener('hashchange', function() {
+            const section = document.querySelector(window.location.hash);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
 
 </head>
 
