@@ -160,6 +160,12 @@ section {
   }
 }
 
+  .image-item img {
+    height: auto; /* Elimina la altura fija para que las imágenes se adapten automáticamente */
+    object-fit: contain; /* Asegura que la imagen completa sea visible sin recortes */
+    margin-top: -15px;
+  }
+
 
 /*ÍTEM DÍA DEL TÉCNICO - IMÁGENES
 
@@ -182,13 +188,16 @@ section {
   height: 500px; /* Mantiene la proporción de la imagen */
   object-fit: cover; /* Recorta la imagen si es necesario para que encaje en la altura */
 }
-
 /* Estilo responsivo para móviles */
 @media (max-width: 768px) {
   .image-item {
     max-width: 100%; /* Las imágenes ocupan el ancho completo en pantallas pequeñas */
   }
 }
+  .image-item img {
+    height: auto; /* Elimina la altura fija para que las imágenes se adapten automáticamente */
+    object-fit: contain; /* Asegura que la imagen completa sea visible sin recortes */
+  }
 
 
 .social-links {
