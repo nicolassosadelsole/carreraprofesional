@@ -2,62 +2,73 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>✅ Nicolás Sosa Del Sole</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:,">
-    
-    <meta name="description" content="Nicolás Sosa Del Sole - Líder técnico apasionado por la educación técnica y el liderazgo creativo. Explorando tecnología y automatización en la industria.">
-    
-    <!-- Meta tags para Open Graph (Facebook, LinkedIn, etc.) -->
-    <meta property="og:title" content="✅ Nicolás Sosa Del Sole">
-    <meta property="og:description" content="Mi Curriculum Digital a traves de un website, junto con las dos claves que marcan mi vida laboral: La educación técnica y el Liderazgo. Soy un apasionado tecnológico y un líder creativo que busca soluciones a los desafios de cada día.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/nicolassosadelsole/Imagenes-Miniatura/main/portada.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://nicolassosadelsole.github.io/carreraprofesional/">
-    <meta property="og:type" content="website">
-    
-    <!-- Meta tags para Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="✅ Nicolás Sosa Del Sole">
-    <meta name="twitter:description" content="Mi Curriculum Digital a traves de un website, junto con las dos claves que marcan mi vida laboral: La educación técnica y el Liderazgo. Soy un apasionado tecnológico y un líder creativo que busca soluciones a los desafios de cada día.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/nicolassosadelsole/Imagenes-Miniatura/main/portada.jpg">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XWCSH4PS4V"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XWCSH4PS4V');
-    </script>
 
-    <!-- Script para cambiar meta tags dinámicamente -->
-    <script>
-        function updateMetaTagsForDiadelTecnico() {
-            const ogImage = document.querySelector('meta[property="og:image"]');
-            const ogUrl = document.querySelector('meta[property="og:url"]');
-            const twitterImage = document.querySelector('meta[name="twitter:image"]');
-            
-            if (window.location.pathname === '/diadeltecnicoargentino') {
-                // Cambiar la imagen y URL al compartir la sección "Día del Técnico"
-                ogImage.setAttribute('content', 'https://raw.githubusercontent.com/nicolassosadelsole/Imagenes-Miniatura/main/diadeltecnico.jpg');
-                ogUrl.setAttribute('content', 'https://nicolassosadelsole.com/diadeltecnicoargentino');
-                twitterImage.setAttribute('content', 'https://raw.githubusercontent.com/nicolassosadelsole/Imagenes-Miniatura/main/diadeltecnico.jpg');
-            } else {
-                // Mantener la imagen predeterminada para el resto de las secciones
-                ogImage.setAttribute('content', 'https://raw.githubusercontent.com/nicolassosadelsole/Imagenes-Miniatura/main/portada.jpg');
-                ogUrl.setAttribute('content', 'https://nicolassosadelsole.github.io/carreraprofesional/');
-                twitterImage.setAttribute('content', 'https://raw.githubusercontent.com/nicolassosadelsole/Imagenes-Miniatura/main/portada.jpg');
+    <meta name="description" content="Nicolás Sosa Del Sole - Líder técnico apasionado por la educación técnica y el 
+    liderazgo creativo. Explorando tecnología y automatización en la industria.">
+
+
+<!-- PORTADAS PARA REDES SOCIALES:-->
+
+        <!-- Meta tags para Open Graph (Facebook, LinkedIn, etc.) -->
+        <meta property="og:title" content="✅ Nicolás Sosa Del Sole">
+
+        <meta property="og:description" content="Mi Curriculum Digital a traves de un website, junto con las dos claves 
+        que marcan mi vida laboral: La educación técnica y el Liderazgo. Soy un apasionado tecnológico y un líder creativo
+        que busca soluciones a los desafios de cada día.">
+
+        <meta property="og:image" content="https://raw.githubusercontent.com/nicolassosadelsole/Imagenes-Miniatura/main/portada.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:url" content="https://nicolassosadelsole.github.io/carreraprofesional/">
+        <meta property="og:type" content="website">
+        
+
+        <!-- Meta tags para Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="✅ Nicolás Sosa Del Sole">
+
+        <meta name="twitter:description" content="Mi Curriculum Digital a traves de un website, junto con las dos claves 
+        que marcan mi vida laboral: La educación técnica y el Liderazgo. Soy un apasionado tecnológico y un líder creativo
+        que busca soluciones a los desafios de cada día.">
+
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/nicolassosadelsole/Imagenes-Miniatura/main/portada.jpg">
+
+
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XWCSH4PS4V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XWCSH4PS4V');
+</script>
+
+<script>
+        // Redirigir a la sección correspondiente según el hash en la URL
+        window.onload = function() {
+            if (window.location.hash) {
+                const hash = window.location.hash;
+                const section = document.querySelector(hash);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
             }
-        }
+        };
 
-        // Llamar a la función al cargar la página
-        window.addEventListener('load', updateMetaTagsForDiadelTecnico);
-        // Llamar a la función al cambiar de sección
-        window.addEventListener('hashchange', updateMetaTagsForDiadelTecnico);
+        // También puedes agregar un listener para cuando se cambie el hash
+        window.addEventListener('hashchange', function() {
+            const section = document.querySelector(window.location.hash);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
     </script>
 
 </head>
@@ -70,16 +81,16 @@
         <nav>
             <ul>
                 <li><a href="#resumen">Resumen</a></li>
-                <li><a href="#objetivo">Objetivo</a></li>
-                <li><a href="#estudios">Estudios</a></li>
-                <li><a href="#ball">BALL CORPORATION</a></li>
-                <li><a href="#electricista">Electricista Matriculado</a></li>
-                <li><a href="#softSkills">Soft Skills</a></li>
-                <li><a href="#programacion">Programación</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#certificados">Certificados</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#social">Mis Redes Sociales</a></li>
+                <li><a href="Secciones/objetivo.html">Objetivo</a></li>
+                <li><a href="Secciones/estudios.html">Estudios</a></li>
+                <li><a href="Secciones/ball.html">BALL CORPORATION</a></li>
+                <li><a href="Electricista/electricista.html">Electricista Matriculado</a></li>
+                <li><a href="Secciones/softskills.html">Soft Skills</a></li>
+                <li><a href="Secciones/programacion.html">Programación</a></li>
+                <li><a href="Portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="Secciones/certificados.html">Certificados</a></li>
+                <li><a href="Blog/blog.html">Blog</a></li>
+                <li><a href="Secciones/social.html">Mis Redes Sociales</a></li>
             </ul>
         </nav>
     </header>
@@ -103,354 +114,14 @@
             <p>En esta etapa actual de mi carrera profesional, la industria 4.0 y los automatismos han despertado en mí un profundo interés por la programación. Actualmente, soy parte del programa de FRONT END en ALURA LATAM, con una fuerte inclinación hacia la creación de métodos tecnológicos e integrales que me ayuden a crear soluciones en los procesos productivos y a mejorar la educación de mis colaboradores a través de métodos ágiles, interesantes e innovadores.</p>
         </section>
 
-        <section id="objetivo">
-            <h3>Objetivo</h3>
-            <p>Me encuentro abierto a nuevas oportunidades laborales, deseoso de asumir posiciones que me desafíen y me 
-               permitan seguir creciendo. Mi objetivo es continuar desarrollándome en roles de liderazgo en operaciones, 
-               donde pueda aplicar mi experiencia técnica en la optimización de procesos productivos, junto con mi pasión 
-               por la conducción de equipos de alto rendimiento. Busco contribuir en una organización que valore la mejora
-               continua, la innovación tecnológica y el desarrollo del talento humano para alcanzar objetivos ambiciosos y
-               sostenibles.</p>
+</main>
 
-        </section>
+ <!-- Botón flotante de WhatsApp -->
+ <a href="https://wa.me/5491131178944" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+</a>
 
-        <section id="estudios">
-            <h3>Estudios Formales</h3>
-            <ul>
-                <li>Tecnicatura en Automatización y Control (UNAB) - En curso</li>
-                <li>Licenciatura en Higiene y Seguridad en el Trabajo (UTN) - En curso</li>
-                <li>Técnico Mecánico de Mantenimiento de Aeronaves.</li>
-            </ul>
+<script src="script.js"></script>
 
-            <h3>Capacitaciones, Cursos y Diplomaturas</h3>
-            <ul>
-                <li>2024 - Curso en Industria 4.0 y tecnologías habilitadoras (UNAB).</li>
-                <li>2024 - Programación desde Cero. Especialización Front End - (ORACLE / ALURA LATAM)</li>
-                
-                <li>2022 - Diplomatura en Mantenimiento Mecánico (Tec People).</li>
-                <p></p>
-                <li>2021 - Programa de capacitación para Líderes de Producción (BALL Argentina):
-                    <ul>
-                        <li>Gestión de Rutina.</li>
-                        <li>Reglas de reacción y escalada.</li>
-                        <li>Entrenamiento de EHS para líderes.</li>
-                        <li>Capacitación Semanal en coaching y oratoria.</li>
-                        <li>Calidad y Procesos.</li>
-                        <li>Capacitación técnica de equipos de planta.</li>
-                        <li>Capacitación teórica sobre matricería, herramentales de planta.</li>
-                        <li>Control estadístico de procesos</li>
-                        <li>Herramientas de Lean 6 Sigma</li>
-                        <li>Curso de formador de formadores</li>
-                        <li>Desarrollo de Instructores.</li>
-                    </ul>
-                <p></p>
-                </li>
-                <li>2019 - Curso Proyectista Eléctrico (Colegio de Técnicos DII)</li>
-                <li>2015 - Capacitación sobre el uso de herramientas Eléctricas y Manuales (BALL Argentina / Tec People).</li>
-                <li>2015 - Capacitación e implementación del "Programa 5S" (BALL Argentina).</li>
-                <li>2015 - Curso de Foguista con carnet de Habilitación OPDS (IRAM IN COMPANY - Examen en la Ciudad de LA PLATA).</li>
-                <li>2014 - Entrenamiento Técnico Operacional sobre lavadoras químicas y manejo de sustancias peligrosas (BALL CHILE).</li>
-                <li>2014 - Capacitación en generación de aguas - Agua DI y agua por ósmosis inversa (BALL Argentina/ FLUENCE).</li>
-                <li>2013 - Capacitación en Operación de Plantas de Efluentes y torres de enfriamiento (BALL Argentina/ FLUENCE).</li>
-                <li>2012 - Capacitación química, ensayos de laboratorio y manejo de ácidos (En BALL Argentina. Proveedores: Houghton y Henkel -PPG).</li>
-                <li>2012 - Curso de Animando Comunidades (Instituto Pironio - Iglesia Católica)</li>
-                <li>2010 - Curso de liquidación de sueldos - Instituto Ramos Mejía.</li>
-                <li>2008 - Capacitación en Seguridad Ergonómica y uso de EPPs (BALL Argentina).</li>
-                                
-                <li>2008 - Complemento Técnico. Capacitación para técnicos de Producción (Ball Argentina - Expositores: 
-                    Micro, Tec People, Bureau Veritas).</li>
-
-                <li>2007 - Capacitación Técnica Industrial (BALL BRASIL - Plantas de Extrema y Jacareí).</li>
-                <li>2007 - Curso de Metalurgia (Novelis - Planta Pindamonhangaba, Brasil. Proveedor de bobinas de aluminio).</li>
-                <li>2002 - Electricista Instalador (Fuerza Aérea Argentina - Matriculación CTPBA).</li>
-            </ul>
-        </section>
-
-        <section id="ball">
-            <h3>Líder de Producción</h3>
-            <p>Periodo: 11/2021 hasta el Presente</p>
-        
-            <p>Descripción del Puesto:</p>
-        
-            <p>
-                Líder de Producción con experiencia en 4 líneas de producción de alta velocidad y 20 colaboradores dentro del 
-                equipo de trabajo. Mis tareas son garantizar la producción según los objetivos previstos, teniendo como 
-                valor fundamental la seguridad de los miembros del equipo de trabajo. Orientado hacia el desarrollo de las
-                personas de forma individual y del equipo profesional, logrando el equilibrio necesario para obtener la 
-                mejora continua de los procesos productivos, la estandarización y el cumplimiento de las políticas de 
-                Calidad. Trabajo en conjunto con las áreas de soporte para alcanzar el plan de producción, lograr la 
-                eficiencia del proceso y cumplir con los Kpi´s de planta. Colaboro en todo el proceso productivo a través 
-                de la experiencia de planta y de haberme desarrollado en distintas posiciones operativas.
-            </p>
-        
-            <!-- Contenedor para centrar imagen y descripción -->
-            <div class="image-container">
-                <img src="Imagenes/driveforten.jpg" alt="Premio Drive For Ten">
-                <p>Premio Drive For Ten, al cumplimiento de los valores de la compañía. Año 2021</p>
-            </div>
-
-
-            <h3>Técnico Químico</h3>
-            <p>Periodo: 04/2012 - 11/2021</p>
-
-            <p>Descripción del Puesto:</p>
-
-            <p>Operación y mantenimiento de equipos de gran porte destinados al lavado de latas de aluminio.
-                Check list diario, realización de órdenes de mantenimiento, realización de ensayos de laboratorio, sólidos 
-                conocimientos en manipulación de sustancias peligrosas (ácido sulfúrico, ácido fluorhídrico, ácido 
-                clorhídrico,etc.)</p>
-
-             <p>Operación y mantenimiento de bombas centrífugas, bombas dosificadoras, sistemas hidráulicos y neumáticos, 
-                rodamientos, roscados de tubos, medición de piezas, cintas transportadoras, manómetros, caudalímetros, 
-                distintas unidades de medida de presión, caudal, densidad.</p>
-
-             <p>Cursos y manejo de aceites sintéticos para la lubricación, limpieza y refrigeración de extrusoras de 
-                aluminio. Liderazgo de equipo con tres personas a cargo y responsable de la operación de todas las maquinas 
-                químicas de planta, incluyendo el conocimiento, la operación y comunicación directa con la planta de 
-                efluentes, sector en el que también desarrollé una sólida experiencia a través de los años. Formación de 
-                pasantes e ingresantes.</p>
-
-             <p>Dentro de mis habilidades también poseo experiencia en sanitización y seguridad de alimentos, 
-                manejo de torres de enfriamiento, uso de lubricantes y polímeros, biocida con control de crecimiento 
-                orgánico. Tratamiento de Agua (Ósmosis inversa, Agua desionizada). Relaciones técnicas con proveedores de químicos y 
-                lubricantes. Foguista con manejo de Calderas y miembro de la Brigada de emergencia. Responsable ante 
-                derrames químicos.</p>
-
-
-            <h3>Técnico de Printer</h3>
-            <p>Periodo: 07/2010 - 02-2014</p>
-
-            <p>Descripción del Puesto:</p>
-
-            <p>Asumo esta posición de forma indirecta. Desde Junio del 2010 trabajando entre Bodymakers, Lavadora y Printer. A partir de Abril del 2012 dejo el sector de bodymakers, asumo como técnico químico, realizando respaldo y cobertura como técnico Impresor, posición que realizo hasta Febrero del 2014 donde se amplian mis tareas como químico y me dedico solo a esa función.</p>
-            <p>Como impresor realizaba ajustes operacionales de los equipos, cambios de rótulo, ajustes de impresión, intervenciones mecánicas varias. Realización de controles de calidad según el patrón de inspección del proceso.</p>
-            
-
-            <h3>Técnico de Bodymakers</h3>
-            <p>Periodo: 10/2007 - 04/2012</p>
-
-            <p>Descripción del Puesto:</p>
-
-            <p>Manejo e intervenciones de prensas hidráulicas horizontales destinadas para la conformación y estiramiento del aluminio por extrusión con uso de matrices, check list, cumplimiento de las ordenes de trabajo establecidad por rutina SAP, mantenimiento autónomo, reparaciones mecánicas con ayuda del mecánico del sector.
-            <p>Esta posición contempla también la operación de prensas hidráulicas verticales, que es donde comienza el proceso de producción de latas.</p>
-            <p>Línea de producción de alta velocidad.</p>
-            <p>A partir de Junio del 2010 comienzo la capacitación sobre impresoras, por lo cual se suma esta operatoria a mis tareas diarias y habituales. Desde esta fecha comienzo a realizar una triple función como técnico polivalente, realizando tareas de producción entre bodymakers, lavadora e impresora.
-            En Mayo del 2012 comienzo la formación de químicos mientras continúo esta triple función.</p>
-
-
-
-            <h3>Operario de Producción</h3>
-            <p>Periodo: 07/2007 - 12/2007</p>
-
-            <p>Descripción del Puesto:</p>
-
-            <p>Mi primer experiencia técnica en una empresa multinacional, comencé como operario de producción, con tareas de aprendizaje de los equipos de planta, reseteo de máquinas, ensayos básicos de calidad de producto. Check list y ajustes básicos de los equipos.</p>
-        </section>
-
-        <section id="electricista">
-
-            <h3>Electricista Matriculado</h3>
-
-            <p>A mis 14 años de edad (año 2001), mientras terminaba noveno año del polimodal, comienzo a estudiar Electricidad en la Base 
-               Aérea de Morón, Fuerza Aérea Argentina, en la sede del Centro de Formación Profesional. Esta fue mi primer 
-               experiencia Técnica, en este mismo predio, un año más tarde, comienzo mis estudios Técnico Aeronáuticos.</p>
-
-            <p>A diferencia de los cursos actuales, el plan de estudios bajo el que me formé pertenecía a la antigua 
-                estructura de lo que fue el CONET (consejo Nacional de Educación Técnica), por lo tanto mis estudios 
-                eléctricos tuvieron una duración de dos años.</p>
-
-            <p>En el año 2007 luego de rendir el examen en el Colegio de Técnicos de la Provincia de Buenos Aires, 
-               me matriculé, y desde entonces he ganado experiencia en diferentes ámbitos:</p>
-               <ul>
-                    <li>Residenciales</li>
-                    <li>Consorcios</li>
-                    <li>Industrias</li>
-                    <li>Obras en Construcción</li>
-               </ul>
-            
-            <p>En la actualidad, si bien me sigo dedicando de forma general a distintas tareas, realizo especialmente:</p>
-                <ul>
-                    <li>Certificados de Aptitud Eléctrica.</li>
-                    <li>Nuevos Medidores.</li>
-                    <li>Instalación y medición de Puesta a Tierra.</li>
-                    <li>Corrección del Factor de Potencia.</li>
-                </ul>
-
-            <p>En breve serán subidos varios de los trabajos realizados.</p>
-            <P>Página en Construcción.</P>
-
-        </section>
-
-        <section id="softSkills">
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Liderazgo</li>
-                <li>Prolijidad y Órden</li>
-                <li>Comunicación efectiva</li>
-                <li>Trabajo en equipo</li>
-                <li>Escucha activa</li>
-                <li>Flexibilidad</li>
-                <li>Inteligencia emocional</li>
-                <li>Detección y resolución de problemas</li>
-                <li>Innovación y Creatividad</li>
-            </ul>
-        </section>
-
-        <section id="programacion">
-            <h3>Estudiante de Programación</h3>
-            <p>En la siguiente Sección llamada: "PORTFOLIO" encontrarás algunos de mis proyectos de programación que voy 
-               realizando. Sin duda uno de los proyectos a los que le he dedicado mayor empeño ha sido esta página web,
-               la cual voy renovando y mejorando a medida que voy aprendiendo.</p>
-        
-            <p>DE TÉCNICO INDUSTRIAL A PROGRAMADOR:</p>
-        
-            <p>La programación es una profesión que siempre ha llamado mi atención, pero el poseer tantos años en 
-                una especialidad técnica diferente me ha sido dificil encontrar la motivación para volcarme con tanto 
-                empeño a algo que es totalmente nuevo para mi. Me gusta mucho estudiar y aprender; pero, suelo hacerlo
-                sobre temáticas dentro de mi rol y profesión actual.</p>
-            <p>Sin muchos resultados, durante estos últimos años he realizado algunos cursos, javascript inicial, introducción a IOT, iniciación con
-               Python, etc.</p>
-            <p>Hace dos años comencé con el curso de ALURA LATAM, también sin resultados, ya que concentrado en otros 
-                estudios y ocupaciones no dediqué la atención necesaria para poder entender, sino que solo realizaba 
-                actividades de forma mecánica.</p>
-            <p>Este año, con algunos conocimientos adquiridos de forma autónoma, y con la decisión de aprender, nuevamente
-               me encuentro realizando el curso de programación desde cero de ALURA LATAM / ORACLE, y esta vez, es donde empecé
-               a crear, comencé a participar de challenges, pude asistir a una semana de charlas en NERDEARLA; a través de la UTN
-               participé del encuentro de "8vo día del talento". Todas oportunidades en las que pude estar presente y que me 
-               están ayudando en esta transición de sumergirme en una profesión completamente nueva y apasionante.</p>
-        
-            <!-- Contenedor para centrar imagen y descripción -->
-            
-            <div class="image-programacion">
-            <div class="image-item">
-                 <img src="Imagenes/planetario.jpg" alt="Premio Drive For Ten">
-                 <p>UTN - OCTAVO DÍA DEL TALENTO 2024 en el Planetario de Buenos Aires</p>
-            </div>
-
-            <div class="image-item">
-                <img src="Imagenes/nerdearla.jpg" alt="Premio Drive For Ten">
-                <p>NERDEARLA 2024, uno de los más grandes eventos de ciencia y tecnología.</p>
-            </div>
-            </div>
-        </section>
-
-        <section id="portfolio">
-
-            <h3>Mis Proyectos de Programación</h3>
-            <p>Mi Página Web</p>
-            <p>Medición Automática de PPK - CALIDAD.</p>
-            <P>Página en Construcción.</P>
-
-        </section>
-
-        <section id="certificados">
-            <h3>Certificados</h3>
-
-                <p>2024 - Curso de Industria 4.0 y tecnologías Habilitadoras - UNAB.</p>
-
-                    <!-- Contenedor para centrar imagen y descripción -->
-                    <div class="image-certificado">
-                        <img src="Imagenes/industria4.0.png" alt="Certificado Industria 4.0">
-                    </div>
-                
-                <p>2015 - Uso de Herramientas Eléctricas y Manuales - Tec People.</p>
-                
-                    <!-- Contenedor para centrar imagen y descripción -->
-                    <div class="image-certificado">
-                        <img src="Imagenes/herramientas-manuales.jpg" alt="Uso de Herramientas Eléctricas y Manuales">
-                    </div>
-
-                <p>2012 - Curso Animando Comunidades - Instituto Cardenal Pironio - Iglesia Católica.</p>
-
-                    <!-- Contenedor para centrar imagen y descripción -->
-                    <div class="image-certificado">
-                        <img src="Imagenes/animando-comunidades.jpg" alt="Certificado Animando Comunidades">
-                    </div>
-
-
-                <p>2007 - Metalurgia Básica do Alumínio - Novelis do Brasil.</p>
-
-                    <!-- Contenedor para centrar imagen y descripción -->
-                    <div class="image-certificado">
-                        <img src="Imagenes/metalurgia.jpg" alt="Certificado Metalurgía Básica do Alumínio">
-                    </div>
-
-                <p>Esta Sección continúa en Construcción.</p>
-            
-        </section>
-
-        <section id="blog">
-            <h3>Día del Técnico Indutrial</h3>
-            
-            <p>10 de Octubre, día del Técnico Industrial en Argentina</p>
-
-            <p>El 10 de octubre de 1898 se aprobaron los primeros planes de estudio de este tipo de educación: de Mecánica,
-               Química y Construcciones, a partir de un proyecto elaborado por el Ing. Otto Krause. Un año después, el 
-               ingeniero fundó la primera escuela industrial de Argentina, la Escuela Técnica N° 1 “Otto Krause”, cita en
-               Paseo Colón 650, en la Ciudad de Buenos Aires.</p>
-            
-            <p><a href="#diadeltecnicoargentino" class="ver-nota-completa">Ver nota completa</a></p>  
-        </section>
-
-        <section id="diadeltecnicoargentino" style="display: none;">
-            <h3>Día del Técnico Industrial</h3>
-
-            <p>10 DE OCTUBRE, DÍA DEL TÉCNICO INDUSTRIAL EN ARGENTINA.</p>
-
-            <p>El 10 de octubre de 1898 se aprobaron los primeros planes de estudio de este tipo de educación, bajo las 
-               especialidades Mecánica, Química y Construcciones, a partir de un proyecto elaborado por el Ing. Otto Krause.
-               Un año después, el ingeniero fundó la primera escuela industrial de Argentina, la Escuela Técnica N° 1 
-               “Otto Krause”, ubicada en Paseo Colón 650, en la Ciudad de Buenos Aires.</p>
-            
-            <p>Con la fundación de esta escuela inició una nueva enseñanza, ya que proporcionaba «conocimientos acabados, 
-               en forma racional y moderna”, estaba basada “en las verdaderas necesidades del país en sus diversas 
-               especialidades”, y tenía “una aplicación inmediata en la vida real», como afirmaba Krause en su discurso 
-               durante la apertura.</p>
-
-            <p>El “Otto Krause”, como se lo conoce, es un emblema de la educación técnica en nuestro país por ser el 
-               primer colegio de su tipo y, cabe destacar, aquí egresó, en el año 1969 bajo la especialidad Química, la
-                primera Técnica mujer de Argentina.</p>
-            
-            <p>Hoy, Argentina tiene alrededor de 1.700 escuelas técnicas para cursar diferentes especialidades, como 
-               Mecánica, Eléctrica, Aeronáutica, Química, Informática y hasta tecnicaturas en Producción Agropecuaria.</p>
-            
-            <p>Hoy las escuelas técnicas del país tienen un año más de estudio que las escuelas normales o bachilleres, 
-               poseen prácticas profesionalizantes y talleres para obtener habilidades en base a su especialidad. No hay 
-               dudas que una buena educación técnica es el futuro del país a través de emprendimientos y empresas que 
-               invierten en nuestro suelo.</p>
-            
-            <p>Tengo la enorme dicha de haber asistido a la escuela técnica, de ser parte de esta historia tecnológica, 
-               y de aprender junto a muchos técnicos y tecnicas en el día a día.</p>
-            
-               <div class="image-diadeltecnico">
-                <div class="image-item">
-                     <img src="Imagenes/diadeltecnico1.jpg" alt="Ball Imagen día del técnico">
-                </div>
-    
-                <div class="image-item">
-                    <img src="Imagenes/diadeltecnico2.jpg" alt="Ball Imagen día del técnico">                 
-                </div>
-                </div>
-            
-        </section>
-
-        <section id="social">
-            <h3>Mis Redes Sociales</h3>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/nicolassosadelsole" target="_blank" class="social-btn">LinkedIn</a>
-                <a href="https://instagram.com/electro.urbano" target="_blank" class="social-btn">Instagram</a>
-                <a href="https://github.com/nicolassosadelsole" target="_blank" class="social-btn">GIT HUB</a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nicolas.sosadelsole@gmail.com" target="_blank" class="social-btn">Enviame un Email</a>
-                <a href="https://wa.me/5491131178944" target="_blank" class="social-btn">WhatsApp</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/5491131178944" target="_blank" class="whatsapp-float">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
-    </a>
-
-    <script src="script.js"></script>
 </body>
 </html>
