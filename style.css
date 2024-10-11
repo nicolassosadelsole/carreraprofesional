@@ -167,7 +167,7 @@ section {
     height: 200px; /* Ajuste de altura menor para pantallas más pequeñas */
     object-fit: cover; /* Mantén el recorte de la imagen si es necesario */
   }
-}
+
 
 
 /*ÍTEM DÍA DEL TÉCNICO - IMÁGENES
@@ -191,6 +191,7 @@ section {
   height: 500px; /* Mantiene la proporción de la imagen */
   object-fit: cover; /* Recorta la imagen si es necesario para que encaje en la altura */
 }
+
 /* Estilo responsivo para móviles */
 @media (max-width: 768px) {
   .image-item {
@@ -221,6 +222,14 @@ section {
   color: #ffffff; /* Cambio el color cuando el cursor pasa sobre el enlace */
   text-decoration: underline; /* Subrayado al pasar el cursor */
 }
+
+
+#objetivo {
+  background-color: #002244; /* Color azul */
+  padding-bottom: 50px; /* Añade espacio inferior */
+  min-height: 50vh; /* O puedes usar min-height para que la sección ocupe toda la pantalla */
+}
+
 
 
 .social-links {
