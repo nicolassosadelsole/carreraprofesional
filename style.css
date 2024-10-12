@@ -244,7 +244,7 @@ text-decoration: underline; /* Subrayado al pasar el cursor */
 
 
 #objetivo {
-  background-color: #002244; /* Color azul */
+  background-color: #0d2f44; /* Color azul */
   padding-bottom: 50px; /* Añade espacio inferior */
   min-height: 50vh; /* O puedes usar min-height para que la sección ocupe toda la pantalla */
 }
