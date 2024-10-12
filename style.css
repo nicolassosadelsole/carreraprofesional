@@ -138,20 +138,20 @@ section {
 /* Contenedor de imágenes */
 .image-programacion {
   display: flex;
-  justify-content: space-between; /* Asegura que las imágenes se mantengan con el mismo espacio */
-  align-items: center; /* Estira las imágenes para que tengan la misma altura */
+  justify-content: space-around; /* Distribuye las imágenes con espacio entre ellas */
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten en pantallas más pequeñas */
+  gap: 20px; /* Añade espacio entre las imágenes */
+  margin-top: 40px;
 }
 
-/* Las imágenes individuales */
-.image-programacion img {
-  width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  height: 300px; /* Ajusta la altura de todas las imágenes al mismo valor */
-  object-fit: cover; /* Ajusta las imágenes para que se adapten sin distorsionarse */
+.image-item {
+  text-align: center; /* Centra la descripción con respecto a la imagen */
+  max-width: 45%; /* Ajusta el ancho máximo de cada imagen y descripción */
 }
 
 .image-item img {
-  width: 100%; /* La imagen se ajusta al ancho del contenedor */
-  height: 300px; /* Establece una altura fija para todas las imágenes */
+  max-width: 100%; /* La imagen no supera el contenedor */
+  height: 500px; /* Mantiene la proporción de la imagen */
   object-fit: cover; /* Recorta la imagen si es necesario para que encaje en la altura */
 }
 
@@ -161,13 +161,6 @@ section {
     max-width: 100%; /* Las imágenes ocupan el ancho completo en pantallas pequeñas */
   }
 }
-
-  .image-item img {
-    width: 100%;
-    height: 200px; /* Ajuste de altura menor para pantallas más pequeñas */
-    object-fit: cover; /* Mantén el recorte de la imagen si es necesario */
-  }
-
 
 
 /*ÍTEM DÍA DEL TÉCNICO - IMÁGENES
@@ -222,6 +215,32 @@ section {
   color: #ffffff; /* Cambio el color cuando el cursor pasa sobre el enlace */
   text-decoration: underline; /* Subrayado al pasar el cursor */
 }
+
+
+/* HAGO QUE LAS NOTAS ENTRE SECCIONES ESTEN MAS CERCA */
+
+.image-item img {
+  height: auto; /* Elimina la altura fija para que las imágenes se adapten automáticamente */
+  object-fit: contain; /* Asegura que la imagen completa sea visible sin recortes */
+}
+
+section#portfolio {
+  margin-bottom: 10px; /* Ajusta este valor según el espacio que desees */
+  padding: 10px; /* Puedes también reducir el padding si es necesario */
+}
+
+/*CAMBIO EL COLOR DE LOS LINKS VER NOTA COMPLETA EN LA SECCIÓN BLOG*/
+
+#portfolio a {
+color: #ffcc00; /* Cambia a un color que prefieras solo para los enlaces del blog */
+text-decoration: none; /* Opcional para quitar el subrayado */
+}
+
+#portfolio a:hover {
+color: #ffffff; /* Cambio el color cuando el cursor pasa sobre el enlace */
+text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
 
 
 #objetivo {
