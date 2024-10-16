@@ -253,6 +253,39 @@ text-decoration: underline; /* Subrayado al pasar el cursor */
 }
 
 
+/* Contenedor de imágenes */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Espacio entre imágenes */
+}
+
+.image-item {
+  width: 45%; /* Las imágenes ocuparán el 45% del contenedor para que haya espacio entre ellas */
+  margin-bottom: 20px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
+}
+
+/* Versión móvil: 1 columna centrada */
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center; /* Centra las imágenes en la vista móvil */
+  }
+
+  .image-item {
+    width: 100%; /* Las imágenes ocuparán el 100% en móviles, una debajo de la otra */
+  }
+}
+
+
+
 
 .social-links {
   display: flex;
