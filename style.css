@@ -284,7 +284,17 @@ text-decoration: underline; /* Subrayado al pasar el cursor */
   }
 }
 
+/*CAMBIO EL COLOR DE LOS LINKS VER NOTA COMPLETA EN LA SECCIÓN BLOG*/
 
+#clasedomotica a {
+  color: #ffcc00; /* Cambia a un color que prefieras solo para los enlaces del blog */
+  text-decoration: none; /* Opcional para quitar el subrayado */
+}
+
+#clasedomotica a:hover {
+  color: #ffffff; /* Cambio el color cuando el cursor pasa sobre el enlace */
+  text-decoration: underline; /* Subrayado al pasar el cursor */
+}
 
 
 .social-links {
