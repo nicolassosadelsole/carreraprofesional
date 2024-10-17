@@ -297,6 +297,38 @@ text-decoration: underline; /* Subrayado al pasar el cursor */
 }
 
 
+/* Contenedor de imágenes */
+.pat-naon {
+  display: flex;
+  justify-content: space-around; /* Distribuye las imágenes con espacio entre ellas */
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten en pantallas más pequeñas */
+  gap: 0px; /* Añade espacio entre las imágenes */
+  margin-top: -5px;
+}
+
+.image-pat {
+  text-align: center; /* Centra la descripción con respecto a la imagen */
+  max-width: 40%; /* Ajusta el ancho máximo de cada imagen y descripción */
+}
+
+.image-pat img {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: 500px; /* La altura se ajusta automáticamente */
+  aspect-ratio: 16 / 10.7; /* Establece una proporción de aspecto uniforme */
+  object-fit: contain /* Recorta la imagen si es necesario para que encaje en la proporción */
+  margin-top: 15px;
+}
+
+/* Estilo responsivo para móviles */
+@media (max-width: 768px) {
+  .image-pat {
+    max-width: 100%; /* Las imágenes ocupan el ancho completo en pantallas pequeñas */
+    flex-direction: column; /* Coloca las imágenes una debajo de la otra en dispositivos móviles */
+  }
+}
+
+
+
 .social-links {
   display: flex;
   justify-content: center;
