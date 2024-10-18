@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✅ Nicolás Sosa Del Sole</title>
-    <link rel="stylesheet" href="../../style.css">
-    <link rel="icon" href="data:,">
-
-    <meta name="description" content="Nicolás Sosa Del Sole - Líder técnico apasionado por la educación técnica y el 
-    liderazgo creativo. Explorando tecnología y automatización en la industria.">
-
-
-<!-- PORTADAS PARA REDES SOCIALES:-->
-
-        <!-- Meta tags para Open Graph (Facebook, LinkedIn, etc.) -->
-        <meta property="og:title" content="✅ Nicolás Sosa Del Sole">
-
+        <!-- Meta tags esenciales -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Título y descripción general -->
+        <title>PPK - Nicolás Sosa Del Sole</title>
+        <meta name="description" content="PPK. Proyecto de Calidad. Medición de espesor de aluminio.">
+        
+        <!-- Favicon -->
+        <link rel="icon" href="data:,">
+    
+        <!-- Estilos -->
+        <link rel="stylesheet" href="../../style.css">
+    
+        <!-- Meta tag para el autor -->
+        <meta name="author" content="Nicolás Sosa Del Sole">
+    
+        <!-- Meta tag para la fecha de publicación -->
+        <meta name="date" content="2024-08-10" scheme="YYYY-MM-DD">
+    
+        <!-- Open Graph Meta tags (Facebook, LinkedIn) -->
+        <meta property="og:title" content="Programa para determinar PPK de espesor de Aluminio.">
         <meta property="og:description" content="Programa para determinar PPK de espesor de Flange.">
-
         <meta property="og:image" content="https://raw.githubusercontent.com/nicolassosadelsole/carreraprofesional/refs/heads/main/Imagenes/ppk.jpg">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <meta property="og:url" content="https://nicolassosadelsole.com/Portfolio/Proyectos/ppk.html">
         <meta property="og:type" content="website">
-        
-
+    
         <!-- Meta tags para Twitter -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="✅ Nicolás Sosa Del Sole">
-
+        <meta name="twitter:title" content="Programa para determinar PPK de espesor de Aluminio.">
         <meta name="twitter:description" content="Programa para determinar PPK de espesor de Flange.">
-
         <meta name="twitter:image" content="https://raw.githubusercontent.com/nicolassosadelsole/carreraprofesional/refs/heads/main/Imagenes/ppk.jpg">
-
-
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XWCSH4PS4V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XWCSH4PS4V');
-</script>
-
-<script>
-        // Redirigir a la sección correspondiente según el hash en la URL
-        window.onload = function() {
-            if (window.location.hash) {
-                const hash = window.location.hash;
-                const section = document.querySelector(hash);
+    
+        <!-- Google Tag Manager (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XWCSH4PS4V"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XWCSH4PS4V');
+        </script>
+    
+        <!-- Script para redirigir a secciones por hash -->
+        <script>
+            window.onload = function() {
+                if (window.location.hash) {
+                    const hash = window.location.hash;
+                    const section = document.querySelector(hash);
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            };
+    
+            window.addEventListener('hashchange', function() {
+                const section = document.querySelector(window.location.hash);
                 if (section) {
                     section.scrollIntoView({ behavior: 'smooth' });
                 }
-            }
-        };
-
-        // También puedes agregar un listener para cuando se cambie el hash
-        window.addEventListener('hashchange', function() {
-            const section = document.querySelector(window.location.hash);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    </script>
-
-</head>
+            });
+        </script>
+    
+    </head>
 
 <body>
     <header>
@@ -94,28 +94,34 @@
 
     <main>
         <section id="portfolio">
-            <h3>Programa para determinar PPK - Medición de espesor de aluminio</h3>
+            <h3>Proyecto: Programa para Determinar el PPK del Espesor de Aluminio</h3>
             
-            <p>Por mi experiencia industrial, al comenzar a estudiar Desarrollo Web, tuve la idea de realizar un 
-               proyecto que ayude a los técnicos a poner datos, solo los 3 números que arroja el sistema de medición oficial,
-                y este programa los convierte automáticamente a mílesimas (ejemplo, coloco 580, se convierte a 0,0058), y 
-                al completar cada control, que son 6 mediciones, el sistema arroja un valor de media y hace todo el cálculo,
-                el cual es largo, para determinar el valor de PPK.</p>
+            <p>A lo largo de mi experiencia en la industria, identificando la importancia del control de calidad y la 
+               necesidad de herramientas eficientes para los técnicos, surgió la idea de desarrollar un proyecto práctico
+               mientras comenzaba a estudiar Desarrollo Web. Este programa está diseñado para simplificar el proceso de 
+               medición del espesor del aluminio, permitiendo a los técnicos ingresar los valores que genera el sistema 
+               oficial de medición y convirtiéndolos automáticamente a milésimas (por ejemplo, al ingresar "580", se 
+               transforma en "0,0058").</p>
 
-            <p>En la industria el índice de PPK indica la capacidad del proceso de producir productos de calidad. 
+            <p>Una vez completadas las seis mediciones que conforman cada control, el sistema calcula automáticamente la 
+               media y realiza los cálculos necesarios para determinar el valor del PPK, un índice esencial en la 
+               industria para evaluar la capacidad del proceso de producir productos de calidad.</p>
+
+            <p>Los resultados del índice PPK se interpretan de la siguiente manera:</p> 
                <ul>
-                    <li>Valor menor a 1 - No aceptable</li>
-                    <li>Valor mayor a 1 - Aceptable</li>
-                    <li>Valor mayor a 1,33 - Productos dentro de las especificaciones de calidad y con valores cercanos a 
-                        la media</li>
+                    <li>Valor menor a 1 - Proceso No aceptable</li>
+                    <li>Valor mayor a 1 - Proceso aceptable</li>
+                    <li>Valor mayor a 1,33 - Productos dentro de las especificaciones de calidad, con resultados 
+                        consistentes y cercanos a la media.</li>
                </ul> 
 
-            <p>Este proyecto separa 3 formatos de producto, y solo dos medidas de calidad, por eso hay dos botones en los 
-               que el usuario puede elegir la opción que desea medir. Dependiendo la opción elegida, el sistema indica
-               cuales son los valores de referencia.</p>
-            <p>Puedes ver el repositorio completo a través del siguiente link:</p>
+            <p>Este proyecto está diseñado para trabajar con tres formatos de productos diferentes y dos medidas de 
+               calidad, lo que permite al usuario seleccionar la opción deseada mediante dos botones. Según la elección, 
+               el sistema mostrará los valores de referencia correspondientes.</p>
 
-            <p><a href="https://github.com/nicolassosadelsole/ppk" class="repositorio-ppk">PPK en GitHub</a></p>
+            <p>Para más detalles, puedes acceder al repositorio completo en GitHub:</p>
+
+            <p><a href="https://github.com/nicolassosadelsole/ppk" class="repositorio-ppk">[PPK en GitHub]</a></p>
 
             <!-- Contenedor para centrar imagen y descripción -->
             <div class="image-container">
@@ -132,7 +138,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
 </a>
 
-<script src="../script.js"></script>
+<script src="../../script.js"></script>
 
 </body>
 </html>
