@@ -327,6 +327,92 @@ text-decoration: underline; /* Subrayado al pasar el cursor */
   }
 }
 
+/*FERIA DE CIENCIAS*/
+
+#feria-ciencias-unab a {
+  color: #ffcc00; /* Cambia a un color que prefieras solo para los enlaces del blog */
+  text-decoration: none; /* Opcional para quitar el subrayado */
+}
+
+#feria-ciencias-unab a:hover {
+  color: #ffffff; /* Cambio el color cuando el cursor pasa sobre el enlace */
+  text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+.videos-feria-ciencias {
+  display: flex;
+  justify-content: center;  /* Centramos los videos */
+  gap: 20px;                /* Espacio entre los videos */
+  flex-wrap: nowrap;          /* Permite que los videos NO se vayan a una nueva línea */
+  margin: 20px 0;
+}
+
+.video-feria2024 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  text-align:center;       /* Centra el texto dentro del contenedor */
+}
+
+.video-horizontal-feria2024 video {
+  width: 90%;  /* Aumenta el tamaño del video horizontal */
+  height: auto;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.video-vertical-feria2024 video {
+  width: 40%;  /* Mantiene el tamaño del video vertical */
+  height: auto;
+  margin-left: 220px;
+  margin-top: -60px;
+}
+
+/* Media query para ajustar estilos en dispositivos móviles */
+@media (max-width: 768px) {
+  .video-horizontal-feria2024 video,
+  .video-vertical-feria2024 video {
+    width: 100%;  /* Asegura que los videos ocupen el 100% del ancho en móviles */
+  }
+
+  .videos-feria-ciencias {
+    gap: 10px;    /* Reduce el espacio entre videos en móviles */
+  }
+}
+
+/* Contenedor de imágenes */
+.feria2024 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Espacio entre imágenes */
+  margin-top: 40px;
+}
+
+.image-item {
+  width: 45%; /* Las imágenes ocuparán el 45% del contenedor para que haya espacio entre ellas */
+  margin-bottom: 20px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
+}
+
+/* Versión móvil: 1 columna centrada */
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center; /* Centra las imágenes en la vista móvil */
+  }
+
+  .image-item {
+    width: 100%; /* Las imágenes ocuparán el 100% en móviles, una debajo de la otra */
+  }
+}
+
 
 
 .social-links {
