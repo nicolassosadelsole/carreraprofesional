@@ -329,12 +329,12 @@ text-decoration: underline; /* Subrayado al pasar el cursor */
 
 /*FERIA DE CIENCIAS*/
 
-#feria-ciencias-unab a {
+#primer-feria-ciencias a {
   color: #ffcc00; /* Cambia a un color que prefieras solo para los enlaces del blog */
   text-decoration: none; /* Opcional para quitar el subrayado */
 }
 
-#feria-ciencias-unab a:hover {
+#primer-feria-ciencias a:hover {
   color: #ffffff; /* Cambio el color cuando el cursor pasa sobre el enlace */
   text-decoration: underline; /* Subrayado al pasar el cursor */
 }
