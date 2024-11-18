@@ -1,0 +1,197 @@
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #001f3f;
+    color: white;
+}
+
+/* Hero Section */
+.inicio-hero {
+    background: url('Imagenes/imagen_inicio.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.inicio-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+/* Texto a la derecha */
+.inicio-text {
+    flex: 2;
+    text-align: left;
+    color: white;
+    margin-right: 20px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el contenido hacia la izquierda */
+}
+
+.inicio-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.inicio-text h2 {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    word-spacing: 2px;
+}
+
+/* Botón */
+.inicio-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-shadow: 2px 2px 5px rgba(1, 1, 1, 1);
+    align-self: center; /* Centra el botón respecto al texto */
+    margin-top: 20px; /* Ajusta la distancia superior */
+    margin-right: 80px; /* Centra hacia la derecha */
+}
+
+.inicio-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Imagen a la izquierda */
+.inicio-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -202px; /* Centra hacia la izquierda */
+}
+
+.inicio-photo img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    border: 5px solid white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra las redes sociales */
+    gap: 15px;
+    margin-top: 40px;
+    align-self: center; /* Centra las redes sociales respecto al texto */
+    margin-right: 80px;
+}
+
+.social-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    text-decoration: none;
+}
+
+.social-icon i {
+    font-size: 24px;
+    color: #333;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    background-color: #007bff;
+}
+
+.social-icon span {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.social-icon:hover span {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .inicio-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .inicio-photo {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+    }
+
+    .inicio-photo img {
+        width: 200px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+
+    .inicio-text {
+        margin: 0 auto;
+        text-align: center;
+        align-items: center; /* Centra el contenido del texto */
+        max-width: 90%;
+    }
+
+    .inicio-text h1 {
+        font-size: 1.8rem; /* Mantiene el nombre en una sola línea */
+        white-space: nowrap;
+    }
+
+    .inicio-text h2 {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .inicio-btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        margin: 20px auto 0; /* Centra el botón horizontalmente */
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center; /* Centra horizontalmente las redes sociales */
+        gap: 15px; /* Espaciado entre los iconos */
+        margin: 40px; /* Asegura que estén centradas */
+        padding: 0; /* Remueve cualquier espacio adicional que pudiera causar problemas */
+    }
+}
